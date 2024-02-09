@@ -1,0 +1,19 @@
+.snakeGame {
+	max-width: 510px;
+	width: 100%;
+	min-height: 475px;
+	outline: solid 1px #0c1616;
+	border-radius: 8px;
+	background-image: linear-gradient(152deg, #175553ff 0%, #43d9ad21 100%);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto;
+	box-shadow: inset 0px 2px 0px 0px #ffffff4d;
+	backdrop-filter: blur(32px);
+}
+.snakeBox {
+    border-radius: 8px;
+    background-color: #011627d6;
+    box-shadow: inset 1px 5px 11px 0px #02121bb5;
+    height: 100%;
+}

@@ -3,6 +3,7 @@ import { Fira_Code } from "next/font/google";
 import "../styles/globals.scss";
 import Footer from "@/components/global/Footer/Footer";
 import Header from "@/components/global/Header/Header";
+import Wrapper from "@/components/global/Wrapper/Wrapper";
 
 export const firaCode = Fira_Code({
 	subsets: ["latin"],
@@ -24,13 +25,11 @@ export default function RootLayout({
 	return (
 		<html className='h-full group' lang='en'>
 			<body className={`${firaCode.className} h-full `}>
-				<div className='wrapper h-full min-w-[0px] px-[4vw] llg:px-[2.5vw] py-[4vh] llg:py-[2.5vh]'>
-					<div className="container h-full max-w-full border-border-color border rounded-lg bg-[#011627] relative z-10 overflow-hidden bg-[url('/bg.png')] bg-no-repeat bg-[50%_30%] bg-cover flex flex-col">
-						<Header />
-						{children}
-						<Footer />
-					</div>
-				</div>
+				<Wrapper>
+					<Header />
+					{children}
+					<Footer />
+				</Wrapper>
 			</body>
 		</html>
 	);

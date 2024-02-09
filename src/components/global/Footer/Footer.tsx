@@ -55,7 +55,7 @@ const Footer = () => {
 			<Link
 				className='group social-link border border-border-color gap-1 text-[#607B96] pl-6 hover:border-[#43D9AD] hidden sm:flex items-center hover:text-[#43D9AD] hover:group/svg:fill-[#43D9AD] duration-500'
 				href={"/"}>
-				@username
+				@dmitriy
 				<svg
 					className='fill-[#607B96] group-[.social-link]:hover:fill-[#43D9AD] duration-500'
 					width='52'
