@@ -1,6 +1,6 @@
-import { NextPage } from "next";
+import { NextPage } from 'next'
 
 const Projects: NextPage = (): JSX.Element => {
-	return <main className='grow'></main>;
-};
-export default Projects;
+    return <main className="grow"></main>
+}
+export default Projects
