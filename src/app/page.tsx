@@ -3,7 +3,7 @@ import { NextPage } from 'next'
 
 const Home: NextPage = (): JSX.Element => {
     return (
-        <main className="grow">
+        <main>
             <HeroHome />
         </main>
     )

@@ -1,9 +1,11 @@
 const HeroHomeTitle = () => {
 	return (
-		<h1 className='title flex flex-col text-5xl text-wrap:balance gap-2.5 max-w-[400px] sm:text-6xl'>
+		<h1 className='title flex flex-col text-wrap:balance gap-2.5 max-w-[450px] text-5xl xs:text-6xl'>
 			<span className='text-[18px]'>Hi all. I am</span>
 			Dmitriy Isgandarov
-			<span className='text-[20px] text-[#43D9AD]'>&gt; Front-end Developer</span>
+			<span className='text-[20px] text-accent-blue leading-6 sm:text-[32px] sm:leading-[42px]'>
+				&gt; Front-end Developer
+			</span>
 		</h1>
 	);
 };

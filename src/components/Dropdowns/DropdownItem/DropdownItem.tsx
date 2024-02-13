@@ -1,19 +1,20 @@
 'use client';
+import React from 'react';
 import { useActiveState } from '@/utils/utils';
 
-const DropdownItem: React.FC<{ content: string }> = ({ content }: { content: string }): JSX.Element => {
-	const [isActive, toggleActive] = useActiveState(false);
+const DropdownItem: React.FC<{ content: string }> = React.memo(({ content }: { content: string }): JSX.Element => {
+	const [isActive, setIsActive] = useActiveState(false);
 
 	return (
 		<button
-			className={`dropdown__item group/dropdownItem flex items-center gap-2 pl-[33px] duration-500 hover:text-primary-button-hover ${
+			className={`dropdown__item group/dropdownItem text-secondary-grey flex items-center gap-2 pl-[33px] duration-200 hover:text-primary-button-hover ${
 				isActive ? 'active' : ''
 			}`}
 			type='button'
 			aria-label='Dropdown item'
-			onClick={toggleActive}>
+			onClick={setIsActive}>
 			<svg
-				className='fill-[#81A1C1] group-hover/dropdownItem:fill-accent-orange duration-500'
+				className='fill-[#81A1C1] group-hover/dropdownItem:fill-accent-orange duration-200'
 				width='16.221924'
 				height='14.599731'
 				viewBox='0 0 16.2219 14.5997'
@@ -31,6 +32,6 @@ const DropdownItem: React.FC<{ content: string }> = ({ content }: { content: str
 			{content}
 		</button>
 	);
-};
+});
 
 export default DropdownItem;

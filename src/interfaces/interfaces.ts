@@ -29,4 +29,29 @@ export interface IDropdown {
 export interface IMainDropdownButton {
 	content: string;
 	children: React.ReactNode;
+	childrenClassName?: string;
+}
+export interface IDropdownInput {
+	label: string;
+	name: string;
+	iconPath: string;
+	alt: string;
+	id: string;
+}
+
+export interface ICheckbox {
+	id: string | number;
+	label?: string;
+	iconPath?: string;
+	width?: number;
+	height?: number;
+	alt?: string;
+	inputClassName?: string;
+	name?: string;
+}
+
+export interface IGist {
+	fileName: string;
+	gistUrl: `${string}/${string}`;
+	className?: string;
 }
