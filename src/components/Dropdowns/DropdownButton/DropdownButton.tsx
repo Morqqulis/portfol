@@ -1,5 +1,5 @@
 'use client';
-import { useActiveState } from '@/utils/utils';
+import { useActiveState } from '@/utils/useActiveState';
 /**
  * Renders a dropdown button component with the given content and folder color.
  *

@@ -1,40 +1,49 @@
 // @import url('https://cdn.rawgit.com/lonekorean/gist-syntax-themes/d49b91b3/stylesheets/one-dark.css');
-// .gist {
-// 	font-size: 16px !important;
-// 	border-radius: 15px !important;
-
-// 	.gist-file {
-// 		border: none !important;
-// 		margin-bottom: 0 !important;
-// 	}
-// 	.gist__title {
-// 		display: none;
-// 	}
-// 	.gist-meta {
-// 		background-color: #010c15 !important;
-// 		font: inherit !important;
-// 		a {
-// 			transition: all 0.3s ease 0s;
-// 			&:hover {
-// 				color: #fff;
-// 			}
-// 		}
-// 	}
-// 	.gist-data {
-// 		border-color: #1e2d3d !important;
-// 	}
-// 	tbody {
-// 		background-color: #010c15 !important;
-// 		td {
-// 			font-size: 16px !important;
-// 		}
-// 	}
-// }
 
 // ================================================
+body .gist {
+	// max-width: 560px;
+}
+body .gist .file-data pre {
+	word-wrap: break-word;
+}
+body .gist .gist-file {
+	border: none;
+	// overflow: hidden;
+	border-radius: 15px;
+	margin-bottom: 0;
+}
+body .gist .gist-data {
+	border-color: #1e2d3d;
+	background: #011221;
+}
+body .gist .gist-meta {
+	background-color: #011221;
+	a {
+		transition: all 0.3s ease 0s;
+		color: #56b5c2;
+		&:hover {
+			color: #fff;
+		}
+	}
+}
+body .gist .gist__title {
+	display: none;
+}
+.gist__content {
+	overflow-y: auto;
+	scrollbar-width: none;
+	scrollbar-color: #1e2d3d #011221;
+	max-height: 184px;
+}
 
+body .gist tbody {
+	display: block;
+	padding-block: 5px;
+}
 body .gist .highlight {
 	background: #011221;
+
 	max-width: 560px;
 }
 body .gist .blob-num,

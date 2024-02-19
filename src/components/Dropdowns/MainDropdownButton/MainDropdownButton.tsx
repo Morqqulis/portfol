@@ -1,6 +1,6 @@
 'use client';
 import { IMainDropdownButton } from '@/interfaces/interfaces';
-import { useActiveState } from '@/utils/utils';
+import { useActiveState } from '@/utils/useActiveState';
 const MainDropdownButton: React.FC<IMainDropdownButton> = ({
 	content,
 	children,

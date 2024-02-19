@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import { useActiveState } from '@/utils/utils';
+import { useActiveState } from '@/utils/useActiveState';
 
 const DropdownItem: React.FC<{ content: string }> = React.memo(({ content }: { content: string }): JSX.Element => {
 	const [isActive, setIsActive] = useActiveState(false);

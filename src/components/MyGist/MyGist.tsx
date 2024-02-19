@@ -3,14 +3,15 @@
 import dynamic from 'next/dynamic';
 import './MyGist.scss';
 import { IGist } from '@/interfaces/interfaces';
-import Loading from '../global/Loading/Loading';
+
 const Gist = dynamic(() => import('react-embed-gist'), {
 	ssr: false,
+	loading: () => <div className='max-w-[560px]'>Loading...</div>,
 });
 
 const MyGist: React.FC<IGist> = ({ fileName, gistUrl, className }: IGist): JSX.Element => {
 	return (
-		<div className={`${className ? className : ''}`}>
+		<div className={`border border-border-color rounded-2xl overflow-hidden ${className ? className : ''}`}>
 			<Gist
 				gist={gistUrl}
 				wrapperClass='gist'
