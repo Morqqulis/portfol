@@ -1,4 +1,11 @@
-export const navigationsSettings = [
+interface INavigationData {
+	title: string;
+	id: string;
+	href: '/' | '/about' | '/projects' | '/contact';
+	ariaLabel: string;
+}
+
+const navigationData: INavigationData[] = [
 	{
 		title: '_home',
 		id: 'home',
@@ -24,3 +31,5 @@ export const navigationsSettings = [
 		ariaLabel: 'Navigation link',
 	},
 ];
+
+export default navigationData;

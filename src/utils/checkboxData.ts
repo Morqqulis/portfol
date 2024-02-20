@@ -1,64 +1,70 @@
-// export const primaryDropdownName = ['personal-info', 'professional-info', 'hobbies', 'contacts'];
-// export const secondaryDropdownName = ['Bio', 'interests', 'education', 'contacts'];
+export interface ICheckboxData {
+	id: string | number;
+	label?: string;
+	iconPath?: string;
+	width?: number;
+	height?: number;
+	alt?: string;
+	inputClassName?: string;
+	name?: string;
+}
 
-import { IDropdownInput } from '@/interfaces/interfaces';
-
-export const projectInputsContent: IDropdownInput[] = [
+const checkboxData: ICheckboxData[] = [
 	{
 		label: 'React',
 		name: 'react',
-		iconPath: '/DropdownInput/react.svg',
+		iconPath: '/checkboxIcons/react.svg',
 		alt: 'Technology Icon',
 		id: '1',
 	},
 	{
 		label: 'Next',
 		name: 'Next',
-		iconPath: '/DropdownInput/next2.svg',
+		iconPath: '/checkboxIcons/next2.svg',
 		alt: 'Technology Icon',
 		id: '1.1',
 	},
 	{
 		label: 'HTML',
 		name: 'html',
-		iconPath: '/DropdownInput/html.svg',
+		iconPath: '/checkboxIcons/html.svg',
 		alt: 'Technology Icon',
 		id: '2',
 	},
 	{
 		label: 'CSS',
 		name: 'css',
-		iconPath: '/DropdownInput/css.svg',
+		iconPath: '/checkboxIcons/css.svg',
 		alt: 'Technology Icon',
 		id: '3',
 	},
 	{
 		label: 'Vue',
 		name: 'vue',
-		iconPath: '/DropdownInput/vue.svg',
+		iconPath: '/checkboxIcons/vue.svg',
 		alt: 'Technology Icon',
 		id: '4',
 	},
 	{
 		label: 'Angular',
 		name: 'angular',
-		iconPath: '/DropdownInput/angular.svg',
+		iconPath: '/checkboxIcons/angular.svg',
 		alt: 'Technology Icon',
 		id: '5',
 	},
 	{
 		label: 'Gatsby',
 		name: 'projectName',
-		iconPath: '/DropdownInput/gatsby.svg',
+		iconPath: '/checkboxIcons/gatsby.svg',
 		alt: 'Technology Icon',
 		id: '6',
 	},
 	{
 		label: 'Flutter',
 		name: 'projectName',
-		iconPath: '/DropdownInput/flutter.svg',
+		iconPath: '/checkboxIcons/flutter.svg',
 		alt: 'Technology Icon',
 		id: ' 7',
 	},
 ];
-
+export default checkboxData;

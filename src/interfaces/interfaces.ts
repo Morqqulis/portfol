@@ -6,6 +6,7 @@ export interface IMyLink extends LinkProps {
 	ariaLabel?: string;
 	children?: React.ReactNode;
 }
+
 export interface IWrapper {
 	children: React.ReactNode;
 }
@@ -48,10 +49,4 @@ export interface ICheckbox {
 	alt?: string;
 	inputClassName?: string;
 	name?: string;
-}
-
-export interface IGist {
-	fileName: string;
-	gistUrl: `${string}/${string}`;
-	className?: string;
 }
